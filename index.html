@@ -18,8 +18,9 @@
                     <img src="odin-logo.png" alt="odin-image">
                     <h1>ODIN</h1>
                 </div>
-            <p class="photo-credit">Photo by <span class="underline">Hailey West</span> on <span class="underline">Unsplash</span></p>
-        </div>
+                <p class="photo-credit">Photo by <span class="underline">Hailey West</span> on <span
+                        class="underline">Unsplash</span></p>
+            </div>
         </div>
 
         <div id="content">
@@ -44,29 +45,30 @@
 
                                 <div class="flex-column">
                                     <label for="last-name">LAST NAME:</label>
-                                    <input type="text" id="lastName" placeholder="Jon..." name=last-name">
+                                    <input type="text" id="lastName" placeholder="Jon..." name=last-name" required>
                                 </div>
                             </div>
 
                             <div class="flex-row">
                                 <div class="flex-column">
                                     <label for="email">EMAIL:</label>
-                                    <input type="email" id="email" placeholder="you@example.com" name="email">
+                                    <input type="email" id="email" placeholder="you@example.com" name="email" required>
                                 </div>
                                 <div class="flex-column">
                                     <label for="phone-num">PHONE NO:</label>
-                                    <input type="text" id="phoneNum" minlength="11" maxlength="11" name="phone-num">
+                                    <input type="tel" name="usrtel" pattern="^[0-9]{3,45}$" title="You can only enter numbers, with a minimal of 3 characters 
+                                    upto 45 characters are accepted." required="required" />
                                 </div>
                             </div>
                             <div class="flex-row">
 
                                 <div class="flex-column">
                                     <label for="password">PASSWORD:</label>
-                                    <input type="password" id="password" name="password">
+                                    <input type="password" id="password" name="password" required>
                                 </div>
                                 <div class="flex-column">
                                     <label for="cpassword">CONFIRM PASSWORD:</label>
-                                    <input type="password" id="cpassword" name="cpasword">
+                                    <input type="password" id="cpassword" name="cpasword" required>
                                 </div>
                             </div>
 
