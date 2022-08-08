@@ -14,6 +14,7 @@ formElement.addEventListener('submit', function(e){
     e.preventDefault();
     
     const firstName = document.querySelector('#firstName');
+    const email = document.querySelector('#email');
     const password = document.querySelector('#password');
     const confirmPassword = document.querySelector('#cpassword');
 
@@ -27,9 +28,15 @@ formElement.addEventListener('submit', function(e){
     // console.log(firstName.value);
 
     // jhjhhhj
+    // if(!email.value.match(
+    //     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    //   )){
+    //     alert('Email not correct, buddy')
+    //   }
 
 
 
 
     // console.log(e)
+    return false;
 });
